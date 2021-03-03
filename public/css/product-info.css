@@ -1,10 +1,8 @@
-body{
-    background-image: url('../images/111.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-/*-----------------HOME PAGE---------------------*/
+/*
+##############
+### NAV
+##############
+*/
 #navigation{
     margin:15px 0;
 }
@@ -15,105 +13,98 @@ body{
     height: 50px;
     width: 100px;
 }
-#banner,#limited-edition{
-    padding: 11% 0;
-}
-#categories{
-    padding-bottom: 10% ;
-}
 
-#banner .banner-heading{
-    font-family: 'Roboto', sans-serif;
-    font-size: 60px;
-    text-align: right;
-    color: #535353;
-}
-#banner .banner-subheading{
-    color: #C9CACC;
-    font-size: 40px;
+/*
+##############
+### PRODUCT INFO
+##############
+*/
+
+#product-info{
+    margin: 100px 0;
     text-align: right;
 }
-#banner .browse{
-    background-color:#a1cae2 ;
-    font-size: 30px;
-    float: right;
-    font-family: 'Roboto',sans-serif;
-    color: white;
-    padding: 0 40px;
+#product-info img{
+    padding: 70px;
 }
-.heading{
-    font-family: 'Roboto', sans-serif;
-    font-size: 35px;
-    color: #535353;
-    padding-bottom: 30px;
+.product-info-bg{
+   background-color: #eff0f3;
+   background-image: none;
+}
+#product-info .carousel{
+    background-color:#a1cae2;
+    border-radius: 50px;
+} 
+
+.flex-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#reviews .card{
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+}
+  
+
+@media(max-width: 600px){
+
+    #banner .banner-heading{
+        font-family: 'Roboto', sans-serif;
+        font-size: 40px;
+        text-align: center;
+        color: #535353;
+        padding-top: 30px;
+    }
+    #banner .banner-subheading{
+        
+        font-size: 20px;
+        
+    }
+    #banner .browse{
+        
+        font-size: 20px;
+        
+    }
+    .heading{
+        
+        font-size: 30px;
+        text-align: center !important;
+    }
+    #categories .card{
+
+        margin: 10px  0;
+    }
+    #footer .news{
     
-    
-}
-#limited-edition img, #on-sale img, .products img{
- padding: 30px;
- background-color: #f4f9f9;
- border-radius: 10%;
+        text-align: left;
+        padding-top: 0;
+    }
+    #footer .contact{
+        
+        text-align: left;
+        padding-top: 0;
+    }
 
- 
-}
-#limited-edition .btn,  #on-sale .btn{
-    background-color:#a1cae2 ; 
-    color: white; 
-}
-#limited-edition .card,  #on-sale .card{
-    border-radius: 10%; 
-    padding: 10px;
-    font-family:  'Roboto',sans-serif;
-    margin: 40px 0;
-}
-.fa-chevron-left , .fa-chevron-right{
-    color: white;
-    background-color: #a1cae2;
-    border-radius: 50%;
-    padding: 10px;
-    width: 50px;
-    height: 50px;
-    margin: 20px 10px;
-
-}
-.owl-carousel .item{
-    display: flex !important;  
-    flex-direction: row;   
-    justify-content: center; 
+    #product-info{
+        margin: 50px 0;
+        text-align: center;
+        
+    }
+    .flex-container {
+        display: flex;
+        justify-content: center;
+    }
 }
 
- .owl-item.active.center {
-    transform: scale(1.1, 1.1);
-}
+/*
+##############
+### FOOTER
+##############
+*/
 
-a{
-    text-decoration: none;
-    color: #535353;;
-}
-#categories a{
-    text-decoration: none;
-    color: #535353;
-    font-family: 'Roboto',sans-serif;
-    
-}
-#categories .card{
-
-    border-radius: 15px;
-    margin: 20px  0;
-    padding: 15px 0;
-    border: none;
-    
-}
-#categories .card:hover{
-
-   background-color: #a1cae2;
-   
-}
-#categories a:hover{
-
-    color: white;
-    
-}
 
 footer a:hover{
     text-decoration: none;
@@ -151,23 +142,6 @@ footer a {
 .footer-copyright{
     font-size: 16px;
 }
-/* #footer{
-    margin-top: -350px;
-    font-family: "Montserrat", sans-serif;
-    color: white;
-    font-size: 18px;
-    font-style: normal;
-   
-    
-}
-#fimage{
-    position: relative;
-    margin-top: -200px;
- 
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-} */
 
 @media screen and (max-width:320px)
 {
@@ -295,4 +269,3 @@ footer a {
         z-index: -1;
     } 
 }
-
