@@ -52,7 +52,7 @@ body{
 #limited-edition img, #on-sale img, .products img{
  padding: 30px;
  background-color: #f4f9f9;
- border-radius: 10%;
+ border-radius: 5%;
 
  
 }
@@ -61,7 +61,7 @@ body{
     color: white; 
 }
 #limited-edition .card,  #on-sale .card{
-    border-radius: 10%; 
+    border-radius: 5%; 
     padding: 10px;
     font-family:  'Roboto',sans-serif;
     margin: 40px 0;
@@ -106,7 +106,7 @@ a{
 }
 #categories .card:hover{
 
-   background-color: #a1cae2;
+   background-color: #c7c7c7;
    
 }
 #categories a:hover{
@@ -169,7 +169,7 @@ footer a {
     z-index: -1;
 } */
 
-@media screen and (max-width:320px)
+@media screen and (max-width:374px)
 {
     #footer{
         margin-top: -50px;
@@ -177,7 +177,7 @@ footer a {
         color: white;
         font-size: 18px;
         font-style: normal;
-        background-color: #a1cae2;     
+        background-color: #a1cae2;    
     }
     #fimage{
         position: relative;
@@ -284,7 +284,8 @@ footer a {
         color: white;
         font-size: 18px;
         font-style: normal;
-        background-color: #a1cae2;     
+        background-color: initial;
+       
     }
     #fimage{
         position: relative;
