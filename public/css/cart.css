@@ -10,7 +10,6 @@ section{
    #mycart .card{
     border-radius: 25px; 
     padding: 10px;
-    font-family:  'Roboto',sans-serif;
     margin-bottom: 20px;
     max-width: 19rem;
     justify-content: center;
@@ -21,9 +20,6 @@ section{
 }
 input { 
     text-align: center; 
-}
-.plus-btn, .minus-btn{
-    color: red;
 }
 
          

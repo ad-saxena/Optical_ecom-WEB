@@ -14,13 +14,12 @@
     
     #products{
         padding-top: 50px;
-        font-family: 'Roboto',sans-serif;
+        
         
     }
     .products .card{
         border-radius: 25px; 
         padding: 10px;
-        font-family:  'Roboto',sans-serif;
         margin-bottom: 20px;
         
         
