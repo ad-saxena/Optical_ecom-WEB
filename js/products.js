@@ -105,3 +105,9 @@ function cgetdata() {
         document.getElementById('women').style.display = "none";
         document.getElementById('all').style.display = "none";
     }
+
+    document.getElementById('xbtn').onclick = function () {
+        document.getElementById('women').style.display = "none";
+        document.getElementById('all').style.display = "none";
+        document.getElementById('men').style.display = "none";
+    }
