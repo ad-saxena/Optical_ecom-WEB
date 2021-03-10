@@ -45,6 +45,7 @@ function mgetdata() {
     });
 }
 getdata();
+
 // FOR MEN
 function getdata() {
     var playersRef = firebase.database().ref("Items/");
@@ -90,9 +91,9 @@ function cgetdata() {
 
 
     document.getElementById('womenbtn').onclick = function () {
-        alert("Hello");
+        // alert("Hello");
         document.getElementById('ffff').style.display = "none";
-        document.getElementById('all').style.display = "none";
+        // document.getElementById('all').style.display = "none";
         document.getElementById('women').style.display = "none";
     }
     // document.getElementById('womenbtn').onclick = function () {
