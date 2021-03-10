@@ -14,12 +14,13 @@
     
     #products{
         padding-top: 50px;
-        
+        font-family: 'Roboto',sans-serif;
         
     }
     .products .card{
         border-radius: 25px; 
         padding: 10px;
+        font-family:  'Roboto',sans-serif;
         margin-bottom: 20px;
         
         
@@ -57,6 +58,10 @@
     height: 70px;
     font-weight: 700;
     background-color: #F4F9F9;
+    text-transform: uppercase;
+}
+.nav-pills .nav-link:hover {
+    background-color:#e2e2e2 ;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
@@ -65,4 +70,33 @@
     width: 150px;
     height: 70px;
     font-weight: 700;
+}
+
+
+
+
+
+#categories a{
+    text-decoration: none;
+    color: #535353;
+    font-family: 'Roboto',sans-serif;
+    
+}
+#categories .card{
+
+    border-radius: 15px;
+    margin: 20px  0;
+    padding: 15px 0;
+    border: none;
+    
+}
+#categories .card:hover{
+
+   background-color: #c7c7c7;
+   
+}
+#categories a:hover{
+
+    color: white;
+    
 }

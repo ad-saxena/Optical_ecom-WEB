@@ -1,4 +1,4 @@
-gitvar firebaseConfig = {
+var firebaseConfig = {
     apiKey: "AIzaSyA5V4TWGi9-IkBrncghZnQpTTKtctw5jmE",
     authDomain: "optical-ecommerce.firebaseapp.com",
     databaseURL: "https://optical-ecommerce-default-rtdb.firebaseio.com",
@@ -30,8 +30,23 @@ var price = "", sname = "", img = "";
 var templateString = "";
 var stdNo = 0;
 
-// FOR MEN
+// FOR ALL
 function mgetdata() {
+    var playersRef = firebase.database().ref("Items/");
+    playersRef.on("child_added", function (data) {
+        var subnode = [data.val()];
+        console.log(subnode);
+
+        $.each(subnode, function (i) {
+            templateString = '<div class="col-12 col-sm-6 col-md-4"><div class="card mx-auto style="border-radius: 25px; padding: 10px;font-family:Roboto,sans-serif;margin-bottom: 20px;"><img src="' + subnode[i].Image_url1 + '" class=" card-img-top" alt="..." id="imgbox" style="border-radius: 15px;margin: 20px  0;padding: 15px 0; border: none;"><div class="card-body"><h5 class="card-title" id="namebox">' + subnode[i].Name + '</h5><h5 class="card-text" style="color: #824DFF;" id="pricebox">Rs. ' + subnode[i].Price + '</h5><a href="#" class="btn rounded-pill m-1" style="background-color: #824DFF; color: white; text-align: left;"><i class="fas fa-shopping-cart"></i> Add to Cart</a><a href="#" class="btn rounded-pill" style="background-color: #a1cae2; color: white;"><i class="fas fa-shopping-bag"></i> Buy Now</a></div></div></div>';
+
+            $('#all').append(templateString);
+        })
+    });
+}
+getdata();
+// FOR MEN
+function getdata() {
     var playersRef = firebase.database().ref("Items/");
     playersRef.on("child_added", function (data) {
         var subnode = [data.val()];
@@ -54,7 +69,7 @@ function wgetdata() {
         $.each(subnode, function (i) {
             templateString = '<div class="col-12 col-sm-6 col-md-4"><div class="card mx-auto style="border-radius: 25px; padding: 10px;font-family:Roboto,sans-serif;margin-bottom: 20px;"><img src="' + subnode[i].Image_url1 + '" class=" card-img-top" alt="..." id="imgbox" style="border-radius: 15px;margin: 20px  0;padding: 15px 0; border: none;"><div class="card-body"><h5 class="card-title" id="namebox">' + subnode[i].Name + '</h5><h5 class="card-text" style="color: #824DFF;" id="pricebox">Rs. ' + subnode[i].Price + '</h5><a href="#" class="btn rounded-pill m-1" style="background-color: #824DFF; color: white; text-align: left;"><i class="fas fa-shopping-cart"></i> Add to Cart</a><a href="#" class="btn rounded-pill" style="background-color: #a1cae2; color: white;"><i class="fas fa-shopping-bag"></i> Buy Now</a></div></div></div>';
 
-            $('#men').append(templateString);
+            $('#women').append(templateString);
         })
     });
 }
@@ -68,12 +83,31 @@ function cgetdata() {
         $.each(subnode, function (i) {
             templateString = '<div class="col-12 col-sm-6 col-md-4"><div class="card mx-auto style="border-radius: 25px; padding: 10px;font-family:Roboto,sans-serif;margin-bottom: 20px;"><img src="' + subnode[i].Image_url1 + '" class=" card-img-top" alt="..." id="imgbox" style="border-radius: 15px;margin: 20px  0;padding: 15px 0; border: none;"><div class="card-body"><h5 class="card-title" id="namebox">' + subnode[i].Name + '</h5><h5 class="card-text" style="color: #824DFF;" id="pricebox">Rs. ' + subnode[i].Price + '</h5><a href="#" class="btn rounded-pill m-1" style="background-color: #824DFF; color: white; text-align: left;"><i class="fas fa-shopping-cart"></i> Add to Cart</a><a href="#" class="btn rounded-pill" style="background-color: #a1cae2; color: white;"><i class="fas fa-shopping-bag"></i> Buy Now</a></div></div></div>';
 
-            $('#men').append(templateString);
+            $('#children').append(templateString);
         })
     });
 }
-// getdata();
+
 
     document.getElementById('womenbtn').onclick = function () {
+        alert("Hello");
+        document.getElementById('ffff').style.display = "none";
+        document.getElementById('all').style.display = "none";
+        document.getElementById('women').style.display = "none";
+    }
+    // document.getElementById('womenbtn').onclick = function () {
+    //     document.getElementById('men').style.display = "none";
+    //     // document.getElementById('all').style.display = "none";
+    //     document.getElementById('women').style.display = "block";
+    // }
+
+    document.getElementById('menbtn').onclick = function () {
+        document.getElementById('women').style.display = "none";
+        document.getElementById('all').style.display = "none";
+    }
+
+    document.getElementById('xbtn').onclick = function () {
+        document.getElementById('women').style.display = "none";
+        document.getElementById('all').style.display = "none";
         document.getElementById('men').style.display = "none";
     }
