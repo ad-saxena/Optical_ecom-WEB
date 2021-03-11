@@ -24,24 +24,27 @@
             <!-- <div class="vertical-line"></div> -->
             <div class="col-lg-7 col-md-7 col-sm-12 right-box">
                 <hr class="top-line">
-                <h1>User Login</h1>
+                <h1>Forget Password</h1>
                 <div class="fielder">
                     <i class="fas fa-envelope"></i>
                     <input id="emailbox" type="text" name="username" placeholder="Email ID"/>
                 </div>
-                <div class="fielder">
-                    <i class="fas fa-user-lock"></i>
-                    <input id="passwordbox" type="text" name="password" placeholder="Password"/>
-                </div>
-                <a href="./forget.html"><p>Forget password?</p></a>
-                <input onclick="loginbtn()" type="button" name="login-button" value="LOGIN" class="lbutton"/>
+                <input onclick="alertr()" type="button" name="login-button" value="Forget" class="lbutton"/>
                 <br>
     
+                <a href="./login.html">Remember Password? Login</a>
+                <br>
                 <a href="./signup.html">Don't Have an account? Sign Up</a>
             </div> 
 
         </div>
     </div>
+    <script>
+        function alertr(){
+            alert("Check Your Email"),
+            window.location="./login.html"
+        }
+    </script>
     <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
