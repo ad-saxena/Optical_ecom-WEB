@@ -92,16 +92,6 @@ body{
     
     
 }
-#pinCode form{
-    font-size: 20px;
-    font-weight: 600;
-
-}
-#pinCode p{
-    font-size: 18px;
-    font-weight: 600;
-
-}
 #limited-edition, #on-sale h5{
     font-size: 1rem;
 }

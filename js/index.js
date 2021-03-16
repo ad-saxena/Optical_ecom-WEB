@@ -18,7 +18,7 @@ var firebaseConfig = {
         <div class="card" >
           <img src="${element.val().Image_url1}" class=" card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">${element.val().Name}</h5>
+            <h5 class="card-title">${element.val().Description}</h5>
             <h5 class="card-text" style="color: #a986f9;">Rs. ${element.val().Price}</h5>
             <a href="#" class="btn rounded-pill m-1"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
             <a href="#" class="btn rounded-pill"><i class="fas fa-shopping-bag"></i> Buy Now</a>
@@ -36,10 +36,10 @@ var firebaseConfig = {
         <div class="card" >
           <img src="${element.val().Image_url1}" class=" card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">${element.val().Name}</h5>
-            <h5 class="card-text" style="color: red; text-decoration: line-through;text-decoration-color:black ;">
+            <h5 class="card-title">${element.val().Description}</h5>
+            <h5 class="card-text" style="color: red; text-decoration: line-through;text-decoration-color:black ; font-size:1rem">
               Rs. 1499</h5>
-            <h5 class="card-text" style="color: #a986f9;">Rs. ${element.val().Price}</h5>
+            <h5 class="card-text" style="color: #a986f9; font-size:1 rem">Rs. ${element.val().Price}</h5>
             <a href="#" class="btn rounded-pill m-1"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
             <a href="#" class="btn rounded-pill"><i class="fas fa-shopping-bag"></i> Buy Now</a>
           </div>
@@ -49,17 +49,3 @@ var firebaseConfig = {
       })
   })
 
-  function myFunction(){
-    var pin = document.getElementById('input1').value;
-    var status = document.getElementById('status');
-  
-     var pincodeNode = firebase.database().ref("PinCode")
-     pincodeNode.on("value",data=>{
-       if (data.child(`${pin}`).exists()){
-         status.innerHTML="Yes, we deliver here!";
-       }
-       else{
-         status.innerHTML="Sorry, we do not deliver here"
-       }
-     })
-    }
