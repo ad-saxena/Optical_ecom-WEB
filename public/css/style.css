@@ -61,6 +61,16 @@ body{
     
     
 }
+#pinCode form{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+#pinCode p{
+    font-size: 18px;
+    font-weight: 600;
+
+}
 #limited-edition img, #on-sale img, .products img{
  padding: 30px;
  background-color: #f4f9f9;
