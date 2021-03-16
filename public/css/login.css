@@ -160,3 +160,12 @@ body{
         font-size: 1.7vh;
     }
 }
+.lbutton{
+    
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--blue);
+    color: white;
+
+}

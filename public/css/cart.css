@@ -10,7 +10,6 @@ section{
    #mycart .card{
     border-radius: 25px; 
     padding: 10px;
-    font-family:  'Roboto',sans-serif;
     margin-bottom: 20px;
     max-width: 19rem;
     justify-content: center;
@@ -22,8 +21,33 @@ section{
 input { 
     text-align: center; 
 }
-.plus-btn, .minus-btn{
-    color: red;
-}
 
-         
+/* @media screen and (min-width: 1440px)
+{
+#footer {
+    margin-top: -370px;
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    background-color: initial;
+}
+}
+@media screen and (min-width: 1024px){
+#footer {
+    margin-top: -190px;
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    background-color: #a1cae2;
+}
+}
+@media screen and (min-width: 768px)
+{
+#footer {
+    margin-top: -80px;
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    background-color: #a1cae2;
+}
+} */

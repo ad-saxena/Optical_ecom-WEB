@@ -17,28 +17,29 @@
     margin: 15px;
 }
 #client-info h2{
-    font-family:  'Roboto',sans-serif;
     font-size: 40px;
+    font-weight: 600;
 }
 #client-info i {
     font-size: 18px;
 }
 #client-info p{
     color: #C7C7C7;
-    font-family:  'Roboto',sans-serif;
 }
 
 #client-info .btn{
     background-color: white;
-    font-family: 'Roboto',sans-serif;
     float: right;
 
 }
 #client-options a{
     text-decoration: none;
     color: #535353;
-    font-family: 'Roboto',sans-serif;
     
+    
+}
+#client-options h5{
+     font-weight: 600;
 }
 #client-options .card{
 
@@ -46,7 +47,7 @@
     margin: 20px  0;
     padding: 15px 0;
     border: none;
-    
+   
 }
 #client-options .card:hover{
 
@@ -63,10 +64,7 @@
     font-weight: lighter;
     font-size: 14px;
 }
-.modal{
-    font-family:  'Roboto',sans-serif;
-    
-}
+
 .modal input{
     background-color: #e7e4e4;
     

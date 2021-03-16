@@ -3,6 +3,7 @@ body{
     background-image: url('../images/111.png');
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: 'Raleway',sans-serif;
   
     
 }
@@ -21,11 +22,43 @@ body{
 #banner,#limited-edition{
     padding: 11% 0;
 }
+
+
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5%;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
 #categories{
     padding-bottom: 10% ;
 }
 .btn{
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 600;
 }
 .grey-bg{
     background-color: #eff0f3;
@@ -33,10 +66,11 @@ body{
 }
 
 #banner .banner-heading{
-    font-family: 'Roboto', sans-serif;
+   
     font-size: 60px;
     text-align: right;
     color: #535353;
+    font-weight: 600;
 }
 #banner .banner-subheading{
     color: #C9CACC;
@@ -47,20 +81,22 @@ body{
     background-color:#a1cae2 ;
     font-size: 30px;
     float: right;
-    font-family: 'Roboto',sans-serif;
     color: white;
     padding: 0 40px;
 }
 .heading{
-    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
     font-size: 35px;
     color: #535353;
     padding-bottom: 30px;
     
     
 }
+#limited-edition, #on-sale h5{
+    font-size: 1rem;
+}
 #limited-edition img, #on-sale img, .products img{
- padding: 30px;
+ padding: 10px;
  background-color: #f4f9f9;
  border-radius: 5%;
 
@@ -69,11 +105,11 @@ body{
 #limited-edition .btn,  #on-sale .btn{
     background-color:#a1cae2 ; 
     color: white; 
+    font-size: 0.65rem;
 }
 #limited-edition .card,  #on-sale .card{
     border-radius: 5%; 
     padding: 10px;
-    font-family:  'Roboto',sans-serif;
     margin: 40px 0;
     max-width: 19rem;
 }
@@ -104,8 +140,12 @@ a{
 #categories a{
     text-decoration: none;
     color: #535353;
-    font-family: 'Roboto',sans-serif;
     
+    
+    
+}
+#categories .card h5{
+   font-weight: 600;
 }
 #categories .card{
 
@@ -193,12 +233,11 @@ footer a {
         background-color:#a1cae2 ;
         font-size: 30px;
         float: none;
-        font-family: 'Roboto',sans-serif;
         color: white;
         padding: 0 40px;
     }
     #banner .banner-heading{
-        font-family: 'Roboto', sans-serif;
+        
         font-size: 40px;
         text-align: center;
         color: #535353;
@@ -228,7 +267,6 @@ footer a {
 {
     #footer{
         margin-top: -50px;
-        font-family: "Montserrat", sans-serif;
         color: white;
         font-size: 18px;
         font-style: normal;
@@ -249,7 +287,6 @@ footer a {
 {
     #footer{
         margin-top: -88px;
-        font-family: "Montserrat", sans-serif;
         color: white;
         font-size: 18px;
         font-style: normal;
@@ -270,7 +307,6 @@ footer a {
     
     #footer{
         margin-top: -100px;
-        font-family: "Montserrat", sans-serif;
         color: white;
         font-size: 18px;
         font-style: normal;
@@ -289,7 +325,6 @@ footer a {
 {
     #footer{
         margin-top: -180px;
-        font-family: "Montserrat", sans-serif;
         color: white;
         font-size: 18px;
         font-style: normal;
@@ -308,7 +343,6 @@ footer a {
 {
     #footer{
         margin-top: -240px;
-        font-family: "Montserrat", sans-serif;
         color: white;
         font-size: 18px;
         font-style: normal;
@@ -327,7 +361,6 @@ footer a {
 {
     #footer{
         margin-top: -350px;
-        font-family: "Montserrat", sans-serif;
         color: white;
         font-size: 18px;
         font-style: normal;
@@ -344,3 +377,6 @@ footer a {
     } 
 }
 
+.page-footer{
+    margin-bottom: -5%;
+}

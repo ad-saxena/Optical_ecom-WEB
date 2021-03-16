@@ -161,3 +161,13 @@ body{
 @media screen and (min-width:1024px){
 
 }
+
+.sbutton{
+    
+        padding: 15px 30px;
+        border-radius: 50px;
+        border: none;
+        background-color: var(--blue);
+        color: white;
+    
+}
