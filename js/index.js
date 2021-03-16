@@ -56,7 +56,7 @@ var firebaseConfig = {
      var pincodeNode = firebase.database().ref("PinCode")
      pincodeNode.on("value",data=>{
        if (data.child(`${pin}`).exists()){
-         status.innerHTML="Yes, we deliver here!"
+         status.innerHTML="Yes, we deliver here!";
        }
        else{
          status.innerHTML="Sorry, we do not deliver here"
